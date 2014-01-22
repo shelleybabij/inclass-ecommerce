@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* these classes take away the bullets that come with ul also makes the display block*/
+
+.list-group {
+	list-style-type: none;
+}
+
+.list-group-item::before {
+	content: "";
+}
+
+.list-group-item {
+	display: block;
+}
+
+/*////////////// this class makes the list group horizontal */
+
+.list-group-item-inline {
+	display: inline-block;
+}
+	
+
+
+	
+
