@@ -11,3 +11,16 @@ title: Dinosaurs
 		<p>All the dinos that ever existed.</p>
 	</div>
 </div>
+
+<ul>
+	{% for dino in site.pages %}
+		{% if dino.category == 'dinosaurs' %}
+		<li>
+		<a href="{{site.baseurl}}{{dino.url}}">
+		<img src="{{site.baseurl}}/images/{{dino.image}}" alt="">
+		{{dino.name}}
+		</a>
+		</li>
+		{% endif %}
+	{% endfor %}
+</ul>
